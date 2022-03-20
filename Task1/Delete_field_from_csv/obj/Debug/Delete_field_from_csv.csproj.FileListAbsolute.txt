@@ -1,0 +1,7 @@
+D:\4 kurs\Bootcamp\Bootcamp\Task1\Delete_field_from_csv\bin\Debug\Delete_field_from_csv.exe.config
+D:\4 kurs\Bootcamp\Bootcamp\Task1\Delete_field_from_csv\bin\Debug\Delete_field_from_csv.exe
+D:\4 kurs\Bootcamp\Bootcamp\Task1\Delete_field_from_csv\bin\Debug\Delete_field_from_csv.pdb
+D:\4 kurs\Bootcamp\Bootcamp\Task1\Delete_field_from_csv\obj\Debug\Delete_field_from_csv.csproj.AssemblyReference.cache
+D:\4 kurs\Bootcamp\Bootcamp\Task1\Delete_field_from_csv\obj\Debug\Delete_field_from_csv.csproj.CoreCompileInputs.cache
+D:\4 kurs\Bootcamp\Bootcamp\Task1\Delete_field_from_csv\obj\Debug\Delete_field_from_csv.exe
+D:\4 kurs\Bootcamp\Bootcamp\Task1\Delete_field_from_csv\obj\Debug\Delete_field_from_csv.pdb
