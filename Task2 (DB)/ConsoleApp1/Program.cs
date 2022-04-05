@@ -173,7 +173,6 @@ namespace ConsoleApp1
                 ForWhat = "for lectures",
                 LaboratoryId = 2
             });
-
             db.SaveChanges();
         }
         public static void TaskExecutionFactory(int taskId, GeneralContext db)
@@ -192,7 +191,7 @@ namespace ConsoleApp1
                     Task3.Execute(db);
                     break;
                 case 4:
-                    Task4.Execute(db);
+                    Task4.Execute();
                     break;
                 default:
                     throw new NotImplementedException();
