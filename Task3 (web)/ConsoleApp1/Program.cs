@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
 using ConsoleApp1.Tasks;
-using ConsoleApp1.Models;
+using Data;
+using Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ConsoleApp1

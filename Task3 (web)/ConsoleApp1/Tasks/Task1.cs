@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,9 +25,9 @@ namespace ConsoleApp1.Tasks
                        };
             foreach (var item in data)
             {
-                
-                Console.WriteLine($"Номер комнаты: {item.Number}, площадь: {item.Length*item.Width}, " +
-                    $"объем: {item.Length * item.Width* item.Height}");
+
+                Console.WriteLine($"Номер комнаты: {item.Number}, площадь: {item.Length * item.Width}, " +
+                    $"объем: {item.Length * item.Width * item.Height}");
             }
 
             Console.WriteLine("----------------------------------------------------------------");
