@@ -71,10 +71,10 @@ namespace ConsoleApp.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FloorId"] = new SelectList(_context.Floors, "Id", "Id", room.FloorId);
-            ViewData["LaboratoryId"] = new SelectList(_context.Laboratories, "Id", "Id", room.LaboratoryId);
-            ViewData["PositionId"] = new SelectList(_context.Positions, "Id", "Id", room.PositionId);
-            ViewData["RTypeId"] = new SelectList(_context.RTypes, "Id", "Id", room.RTypeId);
+            ViewData["FloorId"] = new SelectList(_context.Floors, "Id", "Number", room.FloorId);
+            ViewData["LaboratoryId"] = new SelectList(_context.Laboratories, "Id", "Name", room.LaboratoryId);
+            ViewData["PositionId"] = new SelectList(_context.Positions, "Id", "Name", room.PositionId);
+            ViewData["RTypeId"] = new SelectList(_context.RTypes, "Id", "Name", room.RTypeId);
             return View(room);
         }
 
@@ -91,10 +91,10 @@ namespace ConsoleApp.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["FloorId"] = new SelectList(_context.Floors, "Id", "Id", room.FloorId);
-            ViewData["LaboratoryId"] = new SelectList(_context.Laboratories, "Id", "Id", room.LaboratoryId);
-            ViewData["PositionId"] = new SelectList(_context.Positions, "Id", "Id", room.PositionId);
-            ViewData["RTypeId"] = new SelectList(_context.RTypes, "Id", "Id", room.RTypeId);
+            ViewData["FloorId"] = new SelectList(_context.Floors, "Id", "Number", room.FloorId);
+            ViewData["LaboratoryId"] = new SelectList(_context.Laboratories, "Id", "Name", room.LaboratoryId);
+            ViewData["PositionId"] = new SelectList(_context.Positions, "Id", "Name", room.PositionId);
+            ViewData["RTypeId"] = new SelectList(_context.RTypes, "Id", "Name", room.RTypeId);
             return View(room);
         }
 
@@ -130,10 +130,10 @@ namespace ConsoleApp.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FloorId"] = new SelectList(_context.Floors, "Id", "Id", room.FloorId);
-            ViewData["LaboratoryId"] = new SelectList(_context.Laboratories, "Id", "Id", room.LaboratoryId);
-            ViewData["PositionId"] = new SelectList(_context.Positions, "Id", "Id", room.PositionId);
-            ViewData["RTypeId"] = new SelectList(_context.RTypes, "Id", "Id", room.RTypeId);
+            ViewData["FloorId"] = new SelectList(_context.Floors, "Id", "Number", room.FloorId);
+            ViewData["LaboratoryId"] = new SelectList(_context.Laboratories, "Id", "Name", room.LaboratoryId);
+            ViewData["PositionId"] = new SelectList(_context.Positions, "Id", "Name", room.PositionId);
+            ViewData["RTypeId"] = new SelectList(_context.RTypes, "Id", "Name", room.RTypeId);
             return View(room);
         }
 

@@ -48,7 +48,7 @@ namespace ConsoleApp.Web.Controllers
         // GET: Floors/Create
         public IActionResult Create()
         {
-            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Id");
+            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Name");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace ConsoleApp.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Id", floor.BuildingId);
+            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Name", floor.BuildingId);
             return View(floor);
         }
 
@@ -82,7 +82,7 @@ namespace ConsoleApp.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Id", floor.BuildingId);
+            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Name", floor.BuildingId);
             return View(floor);
         }
 
@@ -118,7 +118,7 @@ namespace ConsoleApp.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Id", floor.BuildingId);
+            ViewData["BuildingId"] = new SelectList(_context.Buildings, "Id", "Name", floor.BuildingId);
             return View(floor);
         }
 

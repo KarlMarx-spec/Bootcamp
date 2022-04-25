@@ -18,22 +18,22 @@ namespace ConsoleApp.Web.Controllers
 
         public IActionResult Index()
         {
-            var result = new List<string>();
-            var data = from room in _context.Rooms
-                       join floor in _context.Floors on room.FloorId equals floor.Id
-                       select new
-                       {
-                           room.Number,
-                           room.Length,
-                           room.Width,
-                           floor.Height
-                       };
-            foreach (var item in data)
-            {
-                result.Add($"Номер комнаты: {item.Number}, площадь: {item.Length * item.Width}, " +
-                $"объем: {item.Length * item.Width * item.Height}");
-            }
-            return View(result);
+            //var result = new List<string>();
+            //var data = from room in _context.Rooms
+            //           join floor in _context.Floors on room.FloorId equals floor.Id
+            //           select new
+            //           {
+            //               room.Number,
+            //               room.Length,
+            //               room.Width,
+            //               floor.Height
+            //           };
+            //foreach (var item in data)
+            //{
+            //    result.Add($"Номер комнаты: {item.Number}, площадь: {item.Length * item.Width}, " +
+            //    $"объем: {item.Length * item.Width * item.Height}");
+            //}
+            return View();
         }
 
         public IActionResult Task1()

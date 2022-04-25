@@ -195,3 +195,4 @@ D:\4 kurs\Bootcamp\Bootcamp\Task3 (web)\ConsoleApp.Web\bin\Debug\net5.0\ConsoleA
 D:\4 kurs\Bootcamp\Bootcamp\Task3 (web)\ConsoleApp.Web\bin\Debug\net5.0\ConsoleApp1.dll
 D:\4 kurs\Bootcamp\Bootcamp\Task3 (web)\ConsoleApp.Web\bin\Debug\net5.0\ConsoleApp1.pdb
 D:\4 kurs\Bootcamp\Bootcamp\Task3 (web)\ConsoleApp.Web\obj\Debug\net5.0\Razor\Views\Tasks\Index.cshtml.g.cs
+D:\4 kurs\Bootcamp\Bootcamp\Task3 (web)\ConsoleApp.Web\obj\Debug\net5.0\Razor\Views\Tasks\Task1.cshtml.g.cs

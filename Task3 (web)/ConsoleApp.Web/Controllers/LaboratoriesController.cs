@@ -48,7 +48,7 @@ namespace ConsoleApp.Web.Controllers
         // GET: Laboratories/Create
         public IActionResult Create()
         {
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id");
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace ConsoleApp.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id", laboratory.DepartmentId);
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", laboratory.DepartmentId);
             return View(laboratory);
         }
 
@@ -82,7 +82,7 @@ namespace ConsoleApp.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id", laboratory.DepartmentId);
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", laboratory.DepartmentId);
             return View(laboratory);
         }
 
@@ -118,7 +118,7 @@ namespace ConsoleApp.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id", laboratory.DepartmentId);
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", laboratory.DepartmentId);
             return View(laboratory);
         }
 

@@ -48,7 +48,7 @@ namespace ConsoleApp.Web.Controllers
         // GET: Departments/Create
         public IActionResult Create()
         {
-            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Id");
+            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Name");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace ConsoleApp.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Id", department.FacultyId);
+            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Name", department.FacultyId);
             return View(department);
         }
 
@@ -82,7 +82,7 @@ namespace ConsoleApp.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Id", department.FacultyId);
+            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Name", department.FacultyId);
             return View(department);
         }
 
@@ -118,7 +118,7 @@ namespace ConsoleApp.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Id", department.FacultyId);
+            ViewData["FacultyId"] = new SelectList(_context.Faculties, "Id", "Name", department.FacultyId);
             return View(department);
         }
 

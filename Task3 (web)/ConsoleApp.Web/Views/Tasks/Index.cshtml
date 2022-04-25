@@ -1,17 +1,12 @@
 ﻿@model List<string>
 
 @{
-    ViewData["Title"] = "Задание 1";
+    ViewData["Title"] = "Задания";
 }
 
-<h1>Задание 1. Рассчитать данные о площадях и объемах каждого помещения.</h1>
-<table class="table">
-    <tbody>
-        @foreach (var item in Model)
-        {
-        <tr>
-            <td>@Html.DisplayFor(modelItem => item)</td>
-        </tr>
-        }
-    </tbody>
-</table>
+<h1>Задания</h1><p></p>
+<h2><a asp-action="Task1">Задание 1</a></h2>
+<h2><a asp-action="Index">Задание 2 (не реализованно) </a></h2>
+<h2><a asp-action="Index">Задание 3 (не реализованно) </a></h2>
+<h2><a asp-action="Index">Задание 4 (не реализованно) </a></h2>
+
